@@ -8,6 +8,14 @@
                     <div class="card">
                         <div class="card-header">
                             <h4>Inicio de sesión</h4>
+
+                            <%
+                                String alerta = (String) (request.getAttribute("alerta"));
+                                if (alerta != null) {
+                            %><div class="alert alert-danger" role="alert">${alerta}</div><%
+                                    }
+                            %>
+
                         </div>
                         <div class="card-body">
                             <div class="form-group">
@@ -25,6 +33,6 @@
         </div>
     </section>
 </form>
-      
-    <jsp:include page="/WEB-INF/paginas/duenio/registrarDuenio.jsp"/>
-    <jsp:include page="/WEB-INF/paginas/guardian/registrarGuardian.jsp"/>
+
+<jsp:include page="/WEB-INF/paginas/duenio/registrarDuenio.jsp"/>
+<jsp:include page="/WEB-INF/paginas/guardian/registrarGuardian.jsp"/>

@@ -13,11 +13,6 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="username">Nombre de usuario</label>
-                        <div role="alert" id="liveAlertPlaceholder">
-                            <% String alerta = request.getParameter("alerta"); 
-                                if(alerta != null){%>
-                                ${alerta}<%}%>
-                        </div>
                         <input type="text" name="username" class="form-control" required>
                     </div>
                     <div class="form-group">
