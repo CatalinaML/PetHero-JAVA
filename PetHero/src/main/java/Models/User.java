@@ -10,7 +10,7 @@ public class User {
     private String password;
     private String nombre;
     private String apellido;
-    private Date nacimiento;
+    private String nacimiento;
     private String email;
     private String ciudad;
     
@@ -23,7 +23,7 @@ public class User {
         this.idUser = idUser;
     }
 
-    public User(String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public User(String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         this.userName = userName;
         this.password = password;
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class User {
         this.ciudad = ciudad;
     }   
 
-    public User(int idUser, String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public User(int idUser, String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         this.idUser = idUser;
         this.userName = userName;
         this.password = password;
@@ -66,7 +66,7 @@ public class User {
         return this.apellido;
     }
 
-    public Date getNacimiento() {
+    public String getNacimiento() {
         return this.nacimiento;
     }
 

@@ -12,11 +12,11 @@ public class Duenio extends User {
         super(idUser);
     }
 
-    public Duenio(String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public Duenio(String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         super(userName, password, nombre, apellido, nacimiento, email, ciudad);
     }
 
-    public Duenio(int idUser, String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public Duenio(int idUser, String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         super(idUser, userName, password, nombre, apellido, nacimiento, email, ciudad);
     }
     

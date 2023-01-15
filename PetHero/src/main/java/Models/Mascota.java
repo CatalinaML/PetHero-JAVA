@@ -11,7 +11,7 @@ public class Mascota {
     private String tipo;
     private String nombre;
     private double peso;
-    private Date nacimiento;
+    private String nacimiento;
     private String raza;
     private String observaciones;
     private File imagen;
@@ -27,7 +27,7 @@ public class Mascota {
         this.idMascota = idMascota;
     }
 
-    public Mascota(int idDuenio, String tipo, String nombre, double peso, Date nacimiento, String raza, String observaciones, File imagen, File planVacunacion, File video) {
+    public Mascota(int idDuenio, String tipo, String nombre, double peso, String nacimiento, String raza, String observaciones, File imagen, File planVacunacion, File video) {
         this.idDuenio = idDuenio;
         this.tipo = tipo;
         this.nombre = nombre;
@@ -40,7 +40,7 @@ public class Mascota {
         this.video = video;
     }
 
-    public Mascota(int idMascota, int idDuenio, String tipo, String nombre, double peso, Date nacimiento, String raza, String observaciones, File imagen, File planVacunacion, File video) {
+    public Mascota(int idMascota, int idDuenio, String tipo, String nombre, double peso, String nacimiento, String raza, String observaciones, File imagen, File planVacunacion, File video) {
         this.idMascota = idMascota;
         this.idDuenio = idDuenio;
         this.tipo = tipo;
@@ -76,7 +76,7 @@ public class Mascota {
         return peso;
     }
 
-    public Date getEdad() {
+    public String getEdad() {
         return this.nacimiento;
     }
 

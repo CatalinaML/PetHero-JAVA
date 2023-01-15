@@ -20,7 +20,7 @@ public class Guardian extends User {
         super(idUser);
     }
 
-    public Guardian(double remuneracion, String tamanioCuidar, Date inicioDisponibilidad, Date finDisponibilidad, String rangoHorario, String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public Guardian(double remuneracion, String tamanioCuidar, Date inicioDisponibilidad, Date finDisponibilidad, String rangoHorario, String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         super(userName, password, nombre, apellido, nacimiento, email, ciudad);
         this.remuneracion = remuneracion;
         this.tamanioCuidar = tamanioCuidar;
@@ -29,7 +29,7 @@ public class Guardian extends User {
         this.rangoHorario = rangoHorario;
     }
 
-    public Guardian(double remuneracion, String tamanioCuidar, Date inicioDisponibilidad, Date finDisponibilidad, String rangoHorario, int idUser, String userName, String password, String nombre, String apellido, Date nacimiento, String email, String ciudad) {
+    public Guardian(double remuneracion, String tamanioCuidar, Date inicioDisponibilidad, Date finDisponibilidad, String rangoHorario, int idUser, String userName, String password, String nombre, String apellido, String nacimiento, String email, String ciudad) {
         super(idUser, userName, password, nombre, apellido, nacimiento, email, ciudad);
         this.remuneracion = remuneracion;
         this.tamanioCuidar = tamanioCuidar;
