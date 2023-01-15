@@ -5,7 +5,7 @@
     <artifactId>PetHero</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>PetHero-1.0</name>
+    <name>PetHero</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
